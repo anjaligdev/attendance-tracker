@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Attendance Tracker</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>Attendance Tracker</h1>
@@ -28,5 +33,23 @@
         <td>Batch A</td>
       </tr>
     </table>
+    <h2>Add new student</h2>
+    <form>
+      <div>
+        <label>Name:</label>
+        <input type="text" name="studentName" />
+      </div>
+      <div>
+        <label>School:</label>
+        <input type="text" name="studentSchool" />
+      </div>
+      <div>
+        <label>Batch:</label>
+        <input type="text" name="studentBatch" />
+      </div>
+      <div>
+        <button type="submit">Add Student</button>
+      </div>
+    </form>
   </body>
 </html>
