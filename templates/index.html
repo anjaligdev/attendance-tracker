@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Attendance Tracker</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      input[type="text"] {
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      body {
+        font-family: sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      h1,
+      h2 {
+        color: #333;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Attendance Tracker</h1>
+    <p>Track student attendance and batch history for workshop sessions.</p>
+    <table cellpadding="10">
+      <tr>
+        <th>Name</th>
+        <th>School</th>
+        <th>Batch</th>
+      </tr>
+      <tr>
+        <td>Ritesh Sharma</td>
+        <td>ABC School</td>
+        <td>Batch A</td>
+      </tr>
+      <tr>
+        <td>Aman Verma</td>
+        <td>ABC School</td>
+        <td>Batch B</td>
+      </tr>
+      <tr>
+        <td>Prem Singh</td>
+        <td>ABC School</td>
+        <td>Batch A</td>
+      </tr>
+    </table>
+    <h2>Add new student</h2>
+    <form>
+      <div>
+        <label>Name:</label>
+        <input type="text" name="studentName" />
+      </div>
+      <div>
+        <label>School:</label>
+        <input type="text" name="studentSchool" />
+      </div>
+      <div>
+        <label>Batch:</label>
+        <input type="text" name="studentBatch" />
+      </div>
+      <div>
+        <button type="submit">Add Student</button>
+      </div>
+    </form>
+  </body>
+</html>
