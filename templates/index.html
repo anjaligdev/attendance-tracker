@@ -42,21 +42,13 @@
         <th>School</th>
         <th>Batch</th>
       </tr>
+      {% for student in students %}
       <tr>
-        <td>Ritesh Sharma</td>
-        <td>ABC School</td>
-        <td>Batch A</td>
+        <td>{{student[1] }}</td>
+        <td>{{student[2] }}</td>
+        <td>{{student[3] }}</td>
       </tr>
-      <tr>
-        <td>Aman Verma</td>
-        <td>ABC School</td>
-        <td>Batch B</td>
-      </tr>
-      <tr>
-        <td>Prem Singh</td>
-        <td>ABC School</td>
-        <td>Batch A</td>
-      </tr>
+      {% endfor %}
     </table>
     <h2>Add new student</h2>
     <form action="/add" method="POST">
